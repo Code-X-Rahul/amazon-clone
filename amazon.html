@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Amazon Ember', sans-serif;
+            /* font-family: 'Amazon Ember Cd RC', sans-serif;
+            font-family: 'Amazon Ember Display', sans-serif;
+            font-family: 'Amazon Ember Duospace', sans-serif;
+            font-family: 'Amazon Ember Mono', sans-serif;
+            font-family: 'Amazon Ember V2', sans-serif; */
+
+        }
+
+        .header {
+            height: 50px;
+            background-color: #02343d;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .left-side img {
+            /* background-size: cover; */
+            height: 30px;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+
+        .address {
+            margin-left: 30px;
+            color: white;
+        }
+
+        .left-side {
+            display: flex;
+        }
+
+
+        .add {
+            padding-top: 8px;
+            font-size: 12px;
+        }
+
+        .add2 {
+            margin-top: -4px;
+            margin-left: -1px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .all {
+            width: 50px;
+            height: 35px;
+            border: none;
+            margin-right: 0;
+            margin-left: 25px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.884);
+        }
+
+        .middle-section {
+            display: flex;
+        }
+
+        .search-bar {
+            height: 35px;
+            width: 40vw;
+            margin: 25px;
+            border: none;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .search-button {
+            height: 35px;
+            width: 40px;
+            border: none;
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgb(207, 169, 97);
+            align-items: center;
+        }
+
+        .search-logo {
+            object-fit: contain;
+            height: 60%;
+            padding-top: 3px;
+        }
+
+        .language-selector {
+            margin-left: 25px;
+            padding-top: 7px;
+            color: white;
+        }
+
+        .accounts {
+            display: flex;
+            flex-direction: column;
+            margin-left: 25px;
+            color: white;
+        }
+
+        .return {
+            color: white;
+            margin-left: 25px;
+        }
+
+        .cart {
+            display: flex;
+            margin-left: 25px;
+            color: white;
+        }
+
+        .cart-img {
+            height: 35px;
+            filter: invert();
+        }
+
+        .cart1 {
+            padding-top: 12px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(30, 19, 58)
+        }
+        .navi {
+            display: flex;
+            margin-left: 15px;
+            color: whitesmoke;
+        }
+
+        .hamburgur-menu {
+            height: 25px;
+            filter: invert();
+        }
+
+        .nav-para1 {
+            padding-top: 4.5px;
+            font-size: 14px;
+        }
+
+        .nav-para {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="pics/Amazon_logo.svg.png" alt="">
+                </div>
+                <div class="address">
+                    <P class="add">Hello</P>
+                    <p class="add2">Select your address</p>
+                </div>
+            </div>
+
+            <div class="all-category">
+                <button class="all">All</button>
+            </div>
+
+            <div class="middle-section">
+                <input class="search-bar" type="text">
+            </div>
+
+            <div class="search">
+                <button class="search-button">
+                    <img class="search-logo" src="pics/search.svg" alt="">
+                </button>
+            </div>
+            <div class="language-selector">
+                EN
+            </div>
+
+            <span class="accounts">
+                <p class="sign-in">Hello,sign in</p>
+                <p class="acc">Accounts &#38; Lists</p>
+            </span>
+            <span class="return">
+                <p>Return</p>
+                <p>&#38; Orders</p>
+            </span>
+            <span class="cart">
+                <img class="cart-img" src="pics/cart-outline.svg" alt="">
+                <p class="cart1">Cart</p>
+            </span>
+        </header>
+        <nav class="nav">
+            <div class="navi">
+                <img class="hamburgur-menu" src="pics/hamburger-menu.svg" alt="">
+                <p class="nav-para1">All</p>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Amazon miniTV</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Bestseller</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Mobile's</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Today's Deals</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Customer Service</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Electronics</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Prime</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Fashion</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Amazon Pay</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Home & Kitchen</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">New Releases</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Computers</P>
+            </div>
+            <div class="navi">
+                <P class="nav-para">Books</P>
+            </div>
+        </nav>
+        <main>
+            <div class="bg">
+                <img src="pics/61RvHn0+pAL._SX3000_.jpg" alt="" class="bg-img">
+            </div>
+        </main>
+    </div>
+</body>
+<script src="javascript.js"></script>
+
+</html>

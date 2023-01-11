@@ -1,0 +1,13 @@
+.bg{
+    height: 600px;
+    background-attachment: fixed;
+}
+.bg-img{
+    height: 100%;
+    position: absolute;
+    /* left: -300px; */
+    /* right: 200px; */
+    max-width: none;
+    overflow: hidden
+    ;
+}
